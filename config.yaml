@@ -1,0 +1,47 @@
+# Camera system configuration
+host: "127.0.0.1"
+port: 5000
+threads: 4
+
+# Path to camera control module
+camera_control_path: "C:/Program Files (x86)/MVS/Development/Samples/Python/MvImport"
+
+# Model paths
+detection_model_path: "models/det_model_p2.pt"
+classification_model_path: "models/cls_model_p2.pt"
+
+# Results directory (kept for backward compatibility)
+
+results_directory: "results"
+
+# Camera configuration (serial numbers)
+cameras:
+  cam1: "DA5211138" #"left"   # Logical name
+  cam2: "DA5843333" #"top"    # Logical name
+  # cam3: "DA5843329" #"right"  # Logical name
+
+# Database configuration
+database:
+  type: "sqlite"     # sqlite, mysql, or postgresql
+  path: "camera_system.db"  # for sqlite
+  # Uncomment and configure the following for MySQL or PostgreSQL
+  # host: "localhost"
+  # port: 3306        # 3306 for MySQL, 5432 for PostgreSQL
+  # username: "root"
+  # password: "password"
+  # database: "camera_system"
+
+# User credentials (hashed passwords)
+users:
+  admin: scrypt:32768:8:1$VghuVUNNe36SU1Y6$55e2bb041f46c342edf791afe56513b5bb750c849f9b1862fb2a24a8c031b88cf40664abe4cefaa8fc74f34520bf29aad33c166ea1aef3ae227c9e6cfcea90e3 # Generated hash for the admin password
+
+streaming:
+  max_fps: 20       # Maximum frames per second
+  min_fps: 5        # Minimum frames per second
+  target_bandwidth: 900  # Target bandwidth in kbps
+  resolution_levels:      # Available resolution levels
+    - {width: 1920, height: 1080}
+    - {width: 1280, height: 720}
+    - {width: 640, height: 480}
+    - {width: 320, height: 240}
+  quality_levels: [100, 80, 60, 40]  # JPEG quality levels

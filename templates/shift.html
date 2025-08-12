@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Shift & Batch{% endblock %}
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-md-6">
+    <div class="card p-4 shadow">
+      <h4 class="mb-3">Enter Shift and Batch</h4>
+      <form method="POST">
+        <div class="mb-3">
+          <label class="form-label">Shift</label>
+          <input type="text" class="form-control" name="shift" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Batch</label>
+          <input type="text" class="form-control" name="batch" required>
+        </div>
+        <button type="submit" class="btn btn-success w-100">Proceed</button>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}

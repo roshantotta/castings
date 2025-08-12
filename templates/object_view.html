@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+{% block title %}Object Inspection{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{ url_for('view_history') }}">History</a></li>
+            <li class="breadcrumb-item"><a href="{{ url_for('view_batch', batch_id=batch.id) }}">Batch {{ batch.batch_number }}</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Object {{ object.object_number }}</li>
+        </ol>
+    </nav>
+
+    <div class="card shadow mb-4">
+        <div class="card-header bg-primary text-white">
+            <h4 class="mb-0">Object #{{ object.object_number }}</h4>
+        </div>
+        <div class="card-body">
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <h5>Inspection Details</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <strong>Batch:</strong> #{{ batch.batch_number }}
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Inspection Time:</strong> {{ object.timestamp.strftime('%Y-%m-%d %H:%M:%S') }}
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Camera Views:</strong> {{ images|length }}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            {% for camera, data in images.items() %}
+            <div class="camera-section mb-5">
+                <h5 class="mb-3">{{ camera|title }} View</h5>
+                <div class="row g-3 mb-4">
+                    <div class="col-md-6">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-header small">Original Image</div>
+                            <div class="card-body p-2">
+                                <img src="{{ data.original }}" 
+                                     class="img-fluid rounded" 
+                                     alt="Original {{ camera }} view">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-header small">Annotated Image</div>
+                            <div class="card-body p-2">
+                                <img src="{{ data.annotated }}" 
+                                     class="img-fluid rounded" 
+                                     alt="Annotated {{ camera }} view">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {% if data.detections %}
+                <h6 class="mb-3">Detected Features ({{ data.detections|length }})</h6>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    {% for detection in data.detections %}
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <img src="{{ detection.crop }}" 
+                                 class="card-img-top" 
+                                 alt="Defect crop">
+                            <div class="card-body">
+                                <h6 class="card-title">{{ detection.class }}</h6>
+                                <ul class="list-unstyled small">
+                                    <li><strong>Confidence:</strong> {{ detection.confidence }}%</li>
+                                    <li><strong>Position:</strong> 
+                                        ({{ detection.coordinates[0] }}, {{ detection.coordinates[1] }})
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-footer small text-muted">
+                                Detected at {{ detection.timestamp }}
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+            <hr class="my-5">
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

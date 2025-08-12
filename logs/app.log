@@ -1,0 +1,1175 @@
+2025-04-17 11:15:52,919 [CRITICAL] - Failed to load models: [Errno 2] No such file or directory: 'models\\detection_model.pt'
+2025-04-17 11:17:29,609 [INFO] - YOLO models loaded successfully
+2025-04-17 11:17:29,680 [INFO] - Database initialized successfully (sqlite)
+2025-04-17 11:17:29,688 [INFO] - Serving on http://0.0.0.0:5000
+2025-04-17 11:18:13,077 [ERROR] - Camera error cam1: 'DA5211138'
+2025-04-17 11:18:13,080 [ERROR] - Camera error cam2: 'DA5843333'
+2025-04-17 11:18:13,080 [ERROR] - Camera error cam3: 'DA5843329'
+2025-04-17 11:29:34,044 [ERROR] - Database save error: type object 'ImageProcessor' has no attribute 'base64_to_image'
+2025-04-17 11:35:23,546 [ERROR] - Database save error: type object 'ImageProcessor' has no attribute 'base64_to_image'
+2025-04-17 11:36:19,962 [INFO] - YOLO models loaded successfully
+2025-04-17 11:36:19,994 [INFO] - Database initialized successfully (sqlite)
+2025-04-17 11:36:19,994 [INFO] - Serving on http://0.0.0.0:5000
+2025-04-17 13:27:16,775 [INFO] - YOLO models loaded successfully
+2025-04-17 13:27:16,919 [INFO] - Database initialized successfully (sqlite)
+2025-04-17 13:27:16,937 [INFO] - Serving on http://0.0.0.0:5000
+2025-04-17 13:27:23,348 [ERROR] - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\Downloads\helicoil_Appv4\helicoil_Appv4\test_flask.py", line 404, in login
+    return render_template('login.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Lenovo\Downloads\helicoil_Appv4\helicoil_Appv4\templates\login.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: base.html
+2025-04-17 13:27:26,670 [ERROR] - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\Downloads\helicoil_Appv4\helicoil_Appv4\test_flask.py", line 404, in login
+    return render_template('login.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Lenovo\Downloads\helicoil_Appv4\helicoil_Appv4\templates\login.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: base.html
+2025-04-17 13:28:11,365 [INFO] - YOLO models loaded successfully
+2025-04-17 13:28:11,398 [INFO] - Database initialized successfully (sqlite)
+2025-04-17 13:28:11,398 [INFO] - Serving on http://0.0.0.0:5000
+2025-04-17 13:28:37,229 [ERROR] - Exception on /capture [GET]
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\Downloads\helicoil_Appv4\helicoil_Appv4\test_flask.py", line 188, in decorated_function
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\Downloads\helicoil_Appv4\helicoil_Appv4\test_flask.py", line 447, in capture
+    return render_template('results.html', mode="capture", results=display_frames)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Lenovo\Downloads\helicoil_Appv4\helicoil_Appv4\templates\results.html", line 61, in template
+    {% endblock %}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'endblock'. You probably made a nesting mistake. Jinja is expecting this tag, but currently looking for 'endfor' or 'else'. The innermost block that needs to be closed is 'for'.
+2025-04-17 13:28:44,453 [ERROR] - Exception on /capture [GET]
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\Downloads\helicoil_Appv4\helicoil_Appv4\test_flask.py", line 188, in decorated_function
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\Downloads\helicoil_Appv4\helicoil_Appv4\test_flask.py", line 447, in capture
+    return render_template('results.html', mode="capture", results=display_frames)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Lenovo\Downloads\helicoil_Appv4\helicoil_Appv4\templates\results.html", line 61, in template
+    {% endblock %}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'endblock'. You probably made a nesting mistake. Jinja is expecting this tag, but currently looking for 'endfor' or 'else'. The innermost block that needs to be closed is 'for'.
+2025-04-17 13:29:27,834 [ERROR] - Exception on /capture [GET]
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\Downloads\helicoil_Appv4\helicoil_Appv4\test_flask.py", line 188, in decorated_function
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\Downloads\helicoil_Appv4\helicoil_Appv4\test_flask.py", line 447, in capture
+    return render_template('results.html', mode="capture", results=display_frames)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Lenovo\Downloads\helicoil_Appv4\helicoil_Appv4\templates\results.html", line 61, in template
+    {% endblock %}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'endblock'. You probably made a nesting mistake. Jinja is expecting this tag, but currently looking for 'endfor' or 'else'. The innermost block that needs to be closed is 'for'.
+2025-04-17 13:29:44,334 [ERROR] - Exception on /capture [GET]
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\Downloads\helicoil_Appv4\helicoil_Appv4\test_flask.py", line 188, in decorated_function
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\Downloads\helicoil_Appv4\helicoil_Appv4\test_flask.py", line 447, in capture
+    return render_template('results.html', mode="capture", results=display_frames)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Lenovo\Downloads\helicoil_Appv4\helicoil_Appv4\templates\results.html", line 61, in template
+    {% endblock %}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'endblock'. You probably made a nesting mistake. Jinja is expecting this tag, but currently looking for 'endfor' or 'else'. The innermost block that needs to be closed is 'for'.
+2025-04-17 13:30:28,753 [ERROR] - Exception on /capture [GET]
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\Downloads\helicoil_Appv4\helicoil_Appv4\test_flask.py", line 188, in decorated_function
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\Downloads\helicoil_Appv4\helicoil_Appv4\test_flask.py", line 447, in capture
+    return render_template('results.html', mode="capture", results=display_frames)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Lenovo\Downloads\helicoil_Appv4\helicoil_Appv4\templates\results.html", line 61, in template
+    {% endblock %}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'endblock'. You probably made a nesting mistake. Jinja is expecting this tag, but currently looking for 'endfor' or 'else'. The innermost block that needs to be closed is 'for'.
+2025-04-17 13:32:45,050 [INFO] - YOLO models loaded successfully
+2025-04-17 13:32:45,066 [INFO] - Database initialized successfully (sqlite)
+2025-04-17 13:32:45,082 [INFO] - Serving on http://0.0.0.0:5000
+2025-04-17 13:33:21,375 [ERROR] - Exception on /capture [GET]
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\Downloads\helicoil_Appv4\helicoil_Appv4\test_flask.py", line 188, in decorated_function
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\Downloads\helicoil_Appv4\helicoil_Appv4\test_flask.py", line 447, in capture
+    return render_template('results.html', mode="capture", results=display_frames)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Lenovo\Downloads\helicoil_Appv4\helicoil_Appv4\templates\results.html", line 61, in template
+    {% endblock %}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'endblock'. You probably made a nesting mistake. Jinja is expecting this tag, but currently looking for 'endfor' or 'else'. The innermost block that needs to be closed is 'for'.
+2025-04-17 13:36:11,183 [INFO] - YOLO models loaded successfully
+2025-04-17 13:36:11,193 [INFO] - Database initialized successfully (sqlite)
+2025-04-17 13:36:11,209 [INFO] - Serving on http://0.0.0.0:5000
+2025-04-17 13:37:18,789 [INFO] - YOLO models loaded successfully
+2025-04-17 13:37:18,805 [INFO] - Database initialized successfully (sqlite)
+2025-04-17 13:37:18,805 [INFO] - Serving on http://0.0.0.0:5000
+2025-04-17 15:41:07,240 [INFO] - YOLO models loaded successfully
+2025-04-17 15:41:07,285 [INFO] - Database initialized successfully (sqlite)
+2025-04-17 15:41:07,303 [INFO] - Serving on http://0.0.0.0:5000
+2025-04-17 15:46:43,721 [ERROR] - Camera error cam1: OpenDevice failed
+2025-04-17 15:46:43,760 [ERROR] - Camera error cam2: OpenDevice failed
+2025-04-17 15:46:44,955 [ERROR] - Error converting image to base64: OpenCV(4.11.0) D:\a\opencv-python\opencv-python\opencv\modules\imgcodecs\src\loadsave.cpp:1308: error: (-215:Assertion failed) !_img.empty() in function 'cv::imencode'
+
+2025-04-17 15:46:44,960 [ERROR] - Error converting image to base64: OpenCV(4.11.0) D:\a\opencv-python\opencv-python\opencv\modules\imgcodecs\src\loadsave.cpp:1308: error: (-215:Assertion failed) !_img.empty() in function 'cv::imencode'
+
+2025-04-17 16:29:21,520 [INFO] - YOLO models loaded successfully
+2025-04-17 16:29:21,616 [INFO] - Database initialized successfully (sqlite)
+2025-04-17 16:29:21,630 [INFO] - Serving on http://0.0.0.0:5000
+2025-04-17 16:31:18,576 [INFO] - YOLO models loaded successfully
+2025-04-17 16:31:18,640 [INFO] - Database initialized successfully (sqlite)
+2025-04-17 16:31:18,655 [INFO] - Serving on http://0.0.0.0:5000
+2025-04-17 16:37:03,381 [ERROR] - Camera error cam1: OpenDevice failed
+2025-04-17 16:37:03,427 [ERROR] - Camera error cam2: OpenDevice failed
+2025-04-17 16:37:03,468 [ERROR] - Camera error cam3: OpenDevice failed
+2025-04-17 16:37:03,476 [ERROR] - Error converting image to base64: OpenCV(4.11.0) D:\a\opencv-python\opencv-python\opencv\modules\imgcodecs\src\loadsave.cpp:1308: error: (-215:Assertion failed) !_img.empty() in function 'cv::imencode'
+
+2025-04-17 16:37:03,478 [ERROR] - Error converting image to base64: OpenCV(4.11.0) D:\a\opencv-python\opencv-python\opencv\modules\imgcodecs\src\loadsave.cpp:1308: error: (-215:Assertion failed) !_img.empty() in function 'cv::imencode'
+
+2025-04-17 16:37:03,479 [ERROR] - Error converting image to base64: OpenCV(4.11.0) D:\a\opencv-python\opencv-python\opencv\modules\imgcodecs\src\loadsave.cpp:1308: error: (-215:Assertion failed) !_img.empty() in function 'cv::imencode'
+
+2025-04-17 16:47:07,325 [INFO] - YOLO models loaded successfully
+2025-04-17 16:47:07,388 [INFO] - Database initialized successfully (sqlite)
+2025-04-17 16:47:07,392 [INFO] - Serving on http://0.0.0.0:5000
+2025-04-17 16:48:07,070 [INFO] - YOLO models loaded successfully
+2025-04-17 16:48:07,132 [INFO] - Database initialized successfully (sqlite)
+2025-04-17 16:48:07,142 [INFO] - Serving on http://0.0.0.0:5000
+2025-04-17 16:51:08,979 [INFO] - YOLO models loaded successfully
+2025-04-17 16:51:09,027 [INFO] - Database initialized successfully (sqlite)
+2025-04-17 16:51:09,043 [INFO] - Serving on http://0.0.0.0:5000
+2025-04-17 16:54:49,104 [INFO] - YOLO models loaded successfully
+2025-04-17 16:54:49,151 [INFO] - Database initialized successfully (sqlite)
+2025-04-17 16:54:49,166 [INFO] - Serving on http://0.0.0.0:5000
+2025-04-17 17:04:08,898 [ERROR] - Camera error cam1: OpenDevice failed
+2025-04-17 17:04:08,939 [ERROR] - Camera error cam2: OpenDevice failed
+2025-04-17 17:04:08,987 [ERROR] - Camera error cam3: OpenDevice failed
+2025-04-17 17:04:09,003 [ERROR] - Error converting image to base64: OpenCV(4.11.0) D:\a\opencv-python\opencv-python\opencv\modules\imgcodecs\src\loadsave.cpp:1308: error: (-215:Assertion failed) !_img.empty() in function 'cv::imencode'
+
+2025-04-17 17:04:09,012 [ERROR] - Error converting image to base64: OpenCV(4.11.0) D:\a\opencv-python\opencv-python\opencv\modules\imgcodecs\src\loadsave.cpp:1308: error: (-215:Assertion failed) !_img.empty() in function 'cv::imencode'
+
+2025-04-17 17:04:09,018 [ERROR] - Error converting image to base64: OpenCV(4.11.0) D:\a\opencv-python\opencv-python\opencv\modules\imgcodecs\src\loadsave.cpp:1308: error: (-215:Assertion failed) !_img.empty() in function 'cv::imencode'
+
+2025-05-06 22:02:41,576 [INFO] - YOLO models loaded successfully
+2025-05-06 22:02:41,814 [INFO] - Database initialized successfully (sqlite)
+2025-05-06 22:02:41,818 [INFO] - Serving on http://0.0.0.0:5000
+2025-05-06 22:03:32,699 [ERROR] - Camera error cam1: 'DA5211138'
+2025-05-06 22:03:32,704 [ERROR] - Camera error cam2: 'DA5843333'
+2025-05-06 22:03:32,705 [ERROR] - Camera error cam3: 'DA5843329'
+2025-05-06 22:03:32,707 [ERROR] - Error converting image to base64: OpenCV(4.11.0) D:\a\opencv-python\opencv-python\opencv\modules\imgcodecs\src\loadsave.cpp:1308: error: (-215:Assertion failed) !_img.empty() in function 'cv::imencode'
+
+2025-05-06 22:03:32,708 [ERROR] - Error converting image to base64: OpenCV(4.11.0) D:\a\opencv-python\opencv-python\opencv\modules\imgcodecs\src\loadsave.cpp:1308: error: (-215:Assertion failed) !_img.empty() in function 'cv::imencode'
+
+2025-05-06 22:03:32,710 [ERROR] - Error converting image to base64: OpenCV(4.11.0) D:\a\opencv-python\opencv-python\opencv\modules\imgcodecs\src\loadsave.cpp:1308: error: (-215:Assertion failed) !_img.empty() in function 'cv::imencode'
+
+2025-05-06 22:23:59,594 [INFO] - YOLO models loaded successfully
+2025-05-06 22:23:59,619 [INFO] - Database initialized successfully (sqlite)
+2025-05-06 22:23:59,626 [INFO] - Serving on http://0.0.0.0:5000
+2025-05-06 22:24:25,660 [ERROR] - Camera error cam1: 'DA5211138'
+2025-05-06 22:24:25,662 [ERROR] - Camera error cam2: 'DA5843333'
+2025-05-06 22:24:25,664 [ERROR] - Camera error cam3: 'DA5843329'
+2025-05-06 22:24:25,667 [ERROR] - Error converting image to base64: OpenCV(4.11.0) D:\a\opencv-python\opencv-python\opencv\modules\imgcodecs\src\loadsave.cpp:1308: error: (-215:Assertion failed) !_img.empty() in function 'cv::imencode'
+
+2025-05-06 22:24:25,669 [ERROR] - Error converting image to base64: OpenCV(4.11.0) D:\a\opencv-python\opencv-python\opencv\modules\imgcodecs\src\loadsave.cpp:1308: error: (-215:Assertion failed) !_img.empty() in function 'cv::imencode'
+
+2025-05-06 22:24:25,671 [ERROR] - Error converting image to base64: OpenCV(4.11.0) D:\a\opencv-python\opencv-python\opencv\modules\imgcodecs\src\loadsave.cpp:1308: error: (-215:Assertion failed) !_img.empty() in function 'cv::imencode'
+
+2025-05-06 22:24:25,738 [ERROR] - Exception on /capture [GET]
+Traceback (most recent call last):
+  File "c:\Users\rrosh\Desktop\helicoil_Appv4\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\rrosh\Desktop\helicoil_Appv4\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\rrosh\Desktop\helicoil_Appv4\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\rrosh\Desktop\helicoil_Appv4\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\rrosh\Desktop\helicoil_Appv4\test_flask.py", line 188, in decorated_function
+    return f(*args, **kwargs)
+  File "C:\Users\rrosh\Desktop\helicoil_Appv4\test_flask.py", line 447, in capture
+    return render_template('results.html', mode="capture", results=display_frames)
+  File "c:\Users\rrosh\Desktop\helicoil_Appv4\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "c:\Users\rrosh\Desktop\helicoil_Appv4\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "c:\Users\rrosh\Desktop\helicoil_Appv4\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\rrosh\Desktop\helicoil_Appv4\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\rrosh\Desktop\helicoil_Appv4\templates\results.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\rrosh\Desktop\helicoil_Appv4\templates\base.html", line 40, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rrosh\Desktop\helicoil_Appv4\templates\results.html", line 35, in block 'content'
+    <a href="{{ url_for('stream') }}" class="btn btn-warning">Retake</a>
+    ^^^^^^^^^
+  File "c:\Users\rrosh\Desktop\helicoil_Appv4\.venv\Lib\site-packages\flask\app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rrosh\Desktop\helicoil_Appv4\.venv\Lib\site-packages\flask\app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+        endpoint,
+    ...<3 lines>...
+        force_external=_external,
+    )
+  File "c:\Users\rrosh\Desktop\helicoil_Appv4\.venv\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'stream'. Did you mean 'static' instead?
+2025-05-06 22:25:51,866 [ERROR] - Camera error cam1: 'DA5211138'
+2025-05-06 22:25:51,869 [ERROR] - Camera error cam2: 'DA5843333'
+2025-05-06 22:25:51,870 [ERROR] - Camera error cam3: 'DA5843329'
+2025-05-06 22:25:51,872 [ERROR] - Error converting image to base64: OpenCV(4.11.0) D:\a\opencv-python\opencv-python\opencv\modules\imgcodecs\src\loadsave.cpp:1308: error: (-215:Assertion failed) !_img.empty() in function 'cv::imencode'
+
+2025-05-06 22:25:51,874 [ERROR] - Error converting image to base64: OpenCV(4.11.0) D:\a\opencv-python\opencv-python\opencv\modules\imgcodecs\src\loadsave.cpp:1308: error: (-215:Assertion failed) !_img.empty() in function 'cv::imencode'
+
+2025-05-06 22:25:51,876 [ERROR] - Error converting image to base64: OpenCV(4.11.0) D:\a\opencv-python\opencv-python\opencv\modules\imgcodecs\src\loadsave.cpp:1308: error: (-215:Assertion failed) !_img.empty() in function 'cv::imencode'
+
+2025-05-06 22:25:51,889 [ERROR] - Exception on /capture [GET]
+Traceback (most recent call last):
+  File "c:\Users\rrosh\Desktop\helicoil_Appv4\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\rrosh\Desktop\helicoil_Appv4\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\rrosh\Desktop\helicoil_Appv4\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\rrosh\Desktop\helicoil_Appv4\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\rrosh\Desktop\helicoil_Appv4\test_flask.py", line 188, in decorated_function
+    return f(*args, **kwargs)
+  File "C:\Users\rrosh\Desktop\helicoil_Appv4\test_flask.py", line 447, in capture
+    return render_template('results.html', mode="capture", results=display_frames)
+  File "c:\Users\rrosh\Desktop\helicoil_Appv4\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "c:\Users\rrosh\Desktop\helicoil_Appv4\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "c:\Users\rrosh\Desktop\helicoil_Appv4\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\rrosh\Desktop\helicoil_Appv4\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\rrosh\Desktop\helicoil_Appv4\templates\results.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\rrosh\Desktop\helicoil_Appv4\templates\base.html", line 40, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rrosh\Desktop\helicoil_Appv4\templates\results.html", line 35, in block 'content'
+    <a href="{{ url_for('stream') }}" class="btn btn-warning">Retake</a>
+    ^^^^^^^^^
+  File "c:\Users\rrosh\Desktop\helicoil_Appv4\.venv\Lib\site-packages\flask\app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rrosh\Desktop\helicoil_Appv4\.venv\Lib\site-packages\flask\app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+        endpoint,
+    ...<3 lines>...
+        force_external=_external,
+    )
+  File "c:\Users\rrosh\Desktop\helicoil_Appv4\.venv\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'stream'. Did you mean 'static' instead?
+2025-05-07 11:24:36,178 [INFO] - YOLO models loaded successfully
+2025-05-07 11:24:36,294 [INFO] - Database initialized successfully (sqlite)
+2025-05-07 11:24:36,303 [INFO] - Serving on http://0.0.0.0:5000
+2025-05-07 11:25:08,791 [ERROR] - Camera error cam1: 'DA5211138'
+2025-05-07 11:25:08,794 [ERROR] - Camera error cam2: 'DA5843333'
+2025-05-07 11:25:08,799 [ERROR] - Camera error cam3: 'DA5843329'
+2025-05-07 11:25:08,818 [ERROR] - Error converting image to base64: OpenCV(4.11.0) D:\a\opencv-python\opencv-python\opencv\modules\imgcodecs\src\loadsave.cpp:1308: error: (-215:Assertion failed) !_img.empty() in function 'cv::imencode'
+
+2025-05-07 11:25:08,821 [ERROR] - Error converting image to base64: OpenCV(4.11.0) D:\a\opencv-python\opencv-python\opencv\modules\imgcodecs\src\loadsave.cpp:1308: error: (-215:Assertion failed) !_img.empty() in function 'cv::imencode'
+
+2025-05-07 11:25:08,825 [ERROR] - Error converting image to base64: OpenCV(4.11.0) D:\a\opencv-python\opencv-python\opencv\modules\imgcodecs\src\loadsave.cpp:1308: error: (-215:Assertion failed) !_img.empty() in function 'cv::imencode'
+
+2025-05-07 11:25:08,949 [ERROR] - Exception on /capture [GET]
+Traceback (most recent call last):
+  File "c:\Users\rrosh\Desktop\helicoil_Appv4\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\rrosh\Desktop\helicoil_Appv4\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\rrosh\Desktop\helicoil_Appv4\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\rrosh\Desktop\helicoil_Appv4\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\rrosh\Desktop\helicoil_Appv4\test_flask.py", line 188, in decorated_function
+    return f(*args, **kwargs)
+  File "C:\Users\rrosh\Desktop\helicoil_Appv4\test_flask.py", line 447, in capture
+    return render_template('results.html', mode="capture", results=display_frames)
+  File "c:\Users\rrosh\Desktop\helicoil_Appv4\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "c:\Users\rrosh\Desktop\helicoil_Appv4\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "c:\Users\rrosh\Desktop\helicoil_Appv4\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\rrosh\Desktop\helicoil_Appv4\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\rrosh\Desktop\helicoil_Appv4\templates\results.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\rrosh\Desktop\helicoil_Appv4\templates\base.html", line 40, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rrosh\Desktop\helicoil_Appv4\templates\results.html", line 35, in block 'content'
+    <a href="{{ url_for('stream') }}" class="btn btn-warning">Retake</a>
+    ^^^^^^^^^
+  File "c:\Users\rrosh\Desktop\helicoil_Appv4\.venv\Lib\site-packages\flask\app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\rrosh\Desktop\helicoil_Appv4\.venv\Lib\site-packages\flask\app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+        endpoint,
+    ...<3 lines>...
+        force_external=_external,
+    )
+  File "c:\Users\rrosh\Desktop\helicoil_Appv4\.venv\Lib\site-packages\werkzeug\routing\map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'stream'. Did you mean 'static' instead?
+2025-05-07 11:36:30,901 [INFO] - YOLO models loaded successfully
+2025-05-07 11:36:30,937 [INFO] - Database initialized successfully (sqlite)
+2025-05-07 11:36:30,940 [INFO] - Serving on http://0.0.0.0:5000
+2025-05-07 11:37:15,095 [ERROR] - Camera initialization error cam1: Camera with serial DA5211138 not found
+2025-05-07 11:37:15,208 [ERROR] - Camera initialization error cam2: Camera with serial DA5843333 not found
+2025-05-07 11:37:15,371 [ERROR] - Camera initialization error cam3: Camera with serial DA5843329 not found
+2025-05-07 11:50:36,459 [WARNING] - Task queue depth is 1
+2025-05-07 11:56:02,701 [WARNING] - Task queue depth is 1
+2025-05-07 12:08:28,584 [INFO] - YOLO models loaded successfully
+2025-05-07 12:08:28,614 [INFO] - Database initialized successfully (sqlite)
+2025-05-07 12:08:28,616 [INFO] - Serving on http://0.0.0.0:5000
+2025-05-07 12:09:23,953 [WARNING] - Task queue depth is 1
+2025-05-07 15:23:38,580 [INFO] - YOLO models loaded successfully
+2025-05-07 15:23:38,736 [INFO] - Database initialized successfully (sqlite)
+2025-05-07 15:23:39,132 [INFO] - Serving on http://0.0.0.0:5000
+2025-05-07 15:25:06,370 [INFO] - YOLO models loaded successfully
+2025-05-07 15:25:06,397 [INFO] - Database initialized successfully (sqlite)
+2025-05-07 15:25:06,399 [INFO] - Serving on http://0.0.0.0:5000
+2025-05-07 15:33:51,568 [INFO] - YOLO models loaded successfully
+2025-05-07 15:33:51,604 [INFO] - Database initialized successfully (sqlite)
+2025-05-07 15:33:51,608 [INFO] - Serving on http://0.0.0.0:5000
+2025-05-07 15:35:05,427 [INFO] - YOLO models loaded successfully
+2025-05-07 15:35:05,457 [INFO] - Database initialized successfully (sqlite)
+2025-05-07 15:35:05,460 [INFO] - Serving on http://0.0.0.0:5000
+2025-05-07 15:35:26,200 [INFO] - YOLO models loaded successfully
+2025-05-07 15:35:26,228 [INFO] - Database initialized successfully (sqlite)
+2025-05-07 15:35:26,363 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-07 15:35:51,622 [INFO] - YOLO models loaded successfully
+2025-05-07 15:35:51,648 [INFO] - Database initialized successfully (sqlite)
+2025-05-07 15:35:51,651 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-07 15:48:48,196 [INFO] - YOLO models loaded successfully
+2025-05-07 15:48:48,226 [INFO] - Database initialized successfully (sqlite)
+2025-05-07 15:48:48,228 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-07 17:20:11,901 [INFO] - YOLO models loaded successfully
+2025-05-07 17:20:11,942 [INFO] - Database initialized successfully (sqlite)
+2025-05-07 17:20:11,945 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-07 17:29:46,144 [INFO] - YOLO models loaded successfully
+2025-05-07 17:29:46,172 [INFO] - Database initialized successfully (sqlite)
+2025-05-07 17:29:46,175 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-07 17:51:09,104 [INFO] - YOLO models loaded successfully
+2025-05-07 17:51:09,133 [INFO] - Database initialized successfully (sqlite)
+2025-05-07 17:51:09,135 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-07 17:58:25,957 [INFO] - YOLO models loaded successfully
+2025-05-07 17:58:25,990 [INFO] - Database initialized successfully (sqlite)
+2025-05-07 17:58:25,993 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-07 18:02:11,842 [INFO] - YOLO models loaded successfully
+2025-05-07 18:02:11,872 [INFO] - Database initialized successfully (sqlite)
+2025-05-07 18:02:11,876 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-07 18:07:58,042 [INFO] - YOLO models loaded successfully
+2025-05-07 18:07:58,069 [INFO] - Database initialized successfully (sqlite)
+2025-05-07 18:07:58,073 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-07 18:53:05,312 [INFO] - FakeTensor cache stats:
+2025-05-07 18:53:05,313 [INFO] -   cache_hits: 0
+2025-05-07 18:53:05,313 [INFO] -   cache_misses: 0
+2025-05-07 18:53:25,288 [INFO] - YOLO models loaded successfully
+2025-05-07 18:53:25,318 [INFO] - Database initialized successfully (sqlite)
+2025-05-07 18:53:25,322 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-07 18:54:09,647 [ERROR] - Camera initialization error cam1: Camera with serial left not found
+2025-05-07 18:54:09,762 [ERROR] - Camera initialization error cam2: Camera with serial top not found
+2025-05-07 18:54:09,882 [ERROR] - Camera initialization error cam3: Camera with serial right not found
+2025-05-07 18:54:32,446 [ERROR] - Camera initialization error cam1: Camera with serial left not found
+2025-05-07 18:54:32,553 [ERROR] - Camera initialization error cam2: Camera with serial top not found
+2025-05-07 18:54:32,664 [ERROR] - Camera initialization error cam3: Camera with serial right not found
+2025-05-07 18:57:20,931 [ERROR] - Camera initialization error cam1: Camera with serial left not found
+2025-05-07 18:57:21,158 [ERROR] - Camera initialization error cam2: Camera with serial top not found
+2025-05-07 18:57:21,374 [ERROR] - Camera initialization error cam3: Camera with serial right not found
+2025-05-07 18:57:48,670 [ERROR] - Camera initialization error cam1: Camera with serial left not found
+2025-05-07 18:57:48,890 [ERROR] - Camera initialization error cam2: Camera with serial top not found
+2025-05-07 18:57:49,111 [ERROR] - Camera initialization error cam3: Camera with serial right not found
+2025-05-07 18:58:10,940 [INFO] - YOLO models loaded successfully
+2025-05-07 18:58:10,969 [INFO] - Database initialized successfully (sqlite)
+2025-05-07 18:58:10,972 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-07 18:58:27,028 [ERROR] - Camera initialization error cam1: Camera with serial left not found
+2025-05-07 18:58:27,244 [ERROR] - Camera initialization error cam2: Camera with serial top not found
+2025-05-07 18:58:27,467 [ERROR] - Camera initialization error cam3: Camera with serial right not found
+2025-05-07 18:59:30,638 [ERROR] - Camera initialization error cam1: Camera with serial left not found
+2025-05-07 18:59:30,860 [ERROR] - Camera initialization error cam2: Camera with serial top not found
+2025-05-07 18:59:31,088 [ERROR] - Camera initialization error cam3: Camera with serial right not found
+2025-05-07 19:00:15,320 [ERROR] - Camera initialization error cam1: Camera with serial left not found
+2025-05-07 19:00:15,542 [ERROR] - Camera initialization error cam2: Camera with serial top not found
+2025-05-07 19:00:15,764 [ERROR] - Camera initialization error cam3: Camera with serial right not found
+2025-05-07 19:01:07,589 [INFO] - YOLO models loaded successfully
+2025-05-07 19:01:07,618 [INFO] - Database initialized successfully (sqlite)
+2025-05-07 19:01:07,621 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-07 21:05:58,019 [INFO] - YOLO models loaded successfully
+2025-05-07 21:05:58,054 [INFO] - Database initialized successfully (sqlite)
+2025-05-07 21:05:58,057 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-07 21:08:46,941 [INFO] - YOLO models loaded successfully
+2025-05-07 21:08:46,972 [INFO] - Database initialized successfully (sqlite)
+2025-05-07 21:08:46,975 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-07 21:09:36,238 [INFO] - YOLO models loaded successfully
+2025-05-07 21:09:36,268 [INFO] - Database initialized successfully (sqlite)
+2025-05-07 21:09:36,271 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-07 21:10:16,205 [ERROR] - Camera initialization error cam1: Camera with serial left not found
+2025-05-07 21:10:16,474 [ERROR] - Camera initialization error cam2: Camera with serial top not found
+2025-05-07 21:10:16,593 [ERROR] - Camera initialization error cam3: Camera with serial right not found
+2025-05-07 21:45:47,478 [INFO] - YOLO models loaded successfully
+2025-05-07 21:45:47,512 [INFO] - Database initialized successfully (sqlite)
+2025-05-07 21:45:47,515 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-07 21:57:15,607 [INFO] - YOLO models loaded successfully
+2025-05-07 21:57:15,714 [INFO] - Database initialized successfully (sqlite)
+2025-05-07 21:57:15,717 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-07 21:57:21,756 [ERROR] - Camera initialization error cam1: Camera with serial left not found
+2025-05-07 21:57:21,862 [ERROR] - Camera initialization error cam2: Camera with serial top not found
+2025-05-07 21:57:21,978 [ERROR] - Camera initialization error cam3: Camera with serial right not found
+2025-05-08 10:11:56,717 [ERROR] - Camera initialization error cam1: Camera with serial left not found
+2025-05-08 10:11:57,016 [ERROR] - Camera initialization error cam2: Camera with serial top not found
+2025-05-08 10:11:57,226 [ERROR] - Camera initialization error cam3: Camera with serial right not found
+2025-05-08 10:16:06,465 [ERROR] - Camera initialization error cam1: Camera with serial left not found
+2025-05-08 10:16:06,677 [ERROR] - Camera initialization error cam2: Camera with serial top not found
+2025-05-08 10:16:06,903 [ERROR] - Camera initialization error cam3: Camera with serial right not found
+2025-05-08 10:18:36,934 [INFO] - YOLO models loaded successfully
+2025-05-08 10:18:37,062 [INFO] - Database initialized successfully (sqlite)
+2025-05-08 10:18:37,066 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-08 10:23:11,066 [WARNING] - Task queue depth is 1
+2025-05-08 10:23:24,974 [WARNING] - Task queue depth is 1
+2025-05-08 10:44:16,096 [WARNING] - 3 thread(s) still running
+2025-05-08 11:05:14,455 [INFO] - YOLO models loaded successfully
+2025-05-08 11:05:14,486 [INFO] - Database initialized successfully (sqlite)
+2025-05-08 11:05:14,489 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-08 11:05:27,147 [ERROR] - Camera initialization error cam1: Camera with serial DA5211138 not found
+2025-05-08 11:05:27,262 [ERROR] - Camera initialization error cam2: Camera with serial DA5843333 not found
+2025-05-08 11:05:27,413 [ERROR] - Camera initialization error cam3: Camera with serial DA5843329 not found
+2025-05-08 12:24:41,056 [INFO] - YOLO models loaded successfully
+2025-05-08 12:24:41,119 [INFO] - Database initialized successfully (sqlite)
+2025-05-08 12:24:41,126 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-08 12:25:07,170 [ERROR] - Camera initialization error cam1: Camera with serial DA5211138 not found
+2025-05-08 12:25:07,286 [ERROR] - Camera initialization error cam2: Camera with serial DA5843333 not found
+2025-05-08 12:25:07,403 [ERROR] - Camera initialization error cam3: Camera with serial DA5843329 not found
+2025-05-08 12:36:33,699 [INFO] - YOLO models loaded successfully
+2025-05-08 12:36:33,739 [INFO] - Database initialized successfully (sqlite)
+2025-05-08 12:36:33,742 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-08 12:37:42,114 [INFO] - YOLO models loaded successfully
+2025-05-08 12:37:42,139 [INFO] - Database initialized successfully (sqlite)
+2025-05-08 12:37:42,144 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-08 12:38:01,744 [INFO] - YOLO models loaded successfully
+2025-05-08 12:38:01,775 [INFO] - Database initialized successfully (sqlite)
+2025-05-08 12:38:01,775 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-08 12:38:23,696 [ERROR] - Camera initialization error cam1: Camera with serial DA5211138 not found
+2025-05-08 12:38:23,812 [ERROR] - Camera initialization error cam2: Camera with serial DA5843333 not found
+2025-05-08 12:38:23,979 [ERROR] - Camera initialization error cam3: Camera with serial DA5843329 not found
+2025-05-08 12:42:18,284 [INFO] - YOLO models loaded successfully
+2025-05-08 12:42:18,344 [INFO] - Database initialized successfully (sqlite)
+2025-05-08 12:42:18,350 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-08 12:42:48,354 [INFO] - YOLO models loaded successfully
+2025-05-08 12:42:48,368 [INFO] - Database initialized successfully (sqlite)
+2025-05-08 12:42:48,368 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-08 13:06:19,241 [INFO] - YOLO models loaded successfully
+2025-05-08 13:06:19,314 [INFO] - Database initialized successfully (sqlite)
+2025-05-08 13:06:19,321 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-08 13:08:43,235 [WARNING] - Task queue depth is 1
+2025-05-08 13:08:55,356 [INFO] - Client disconnected while serving /video_feed/cam1
+2025-05-08 13:34:02,802 [INFO] - YOLO models loaded successfully
+2025-05-08 13:34:02,868 [INFO] - Database initialized successfully (sqlite)
+2025-05-08 13:34:02,871 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-08 13:34:26,907 [ERROR] - Camera initialization error cam1: Camera with serial DA5211138 not found
+2025-05-08 13:34:27,033 [ERROR] - Camera initialization error: OpenDevice failed
+2025-05-08 13:34:27,033 [ERROR] - Camera initialization error cam2: OpenDevice failed
+2025-05-08 13:34:27,165 [ERROR] - Camera initialization error: OpenDevice failed
+2025-05-08 13:34:27,165 [ERROR] - Camera initialization error cam3: OpenDevice failed
+2025-05-08 13:34:47,362 [ERROR] - Camera initialization error cam1: Camera with serial DA5211138 not found
+2025-05-08 13:34:47,505 [ERROR] - Camera initialization error: OpenDevice failed
+2025-05-08 13:34:47,508 [ERROR] - Camera initialization error cam2: OpenDevice failed
+2025-05-08 13:34:47,652 [ERROR] - Camera initialization error: OpenDevice failed
+2025-05-08 13:34:47,652 [ERROR] - Camera initialization error cam3: OpenDevice failed
+2025-05-08 13:34:54,234 [ERROR] - Camera initialization error cam1: Camera with serial DA5211138 not found
+2025-05-08 13:34:54,374 [ERROR] - Camera initialization error: OpenDevice failed
+2025-05-08 13:34:54,377 [ERROR] - Camera initialization error cam2: OpenDevice failed
+2025-05-08 13:34:54,516 [ERROR] - Camera initialization error: OpenDevice failed
+2025-05-08 13:34:54,516 [ERROR] - Camera initialization error cam3: OpenDevice failed
+2025-05-08 13:38:09,577 [INFO] - YOLO models loaded successfully
+2025-05-08 13:38:09,613 [INFO] - Database initialized successfully (sqlite)
+2025-05-08 13:38:09,617 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-08 13:39:16,815 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-08 13:39:17,745 [INFO] - Client disconnected while serving /video_feed/cam3
+2025-05-08 13:42:28,363 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-08 13:42:28,462 [INFO] - Client disconnected while serving /video_feed/cam3
+2025-05-08 13:45:53,382 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-08 13:45:53,515 [INFO] - Client disconnected while serving /video_feed/cam3
+2025-05-08 13:48:24,989 [INFO] - YOLO models loaded successfully
+2025-05-08 13:48:25,026 [INFO] - Database initialized successfully (sqlite)
+2025-05-08 13:48:25,026 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-08 13:49:02,616 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-08 13:49:02,746 [INFO] - Client disconnected while serving /video_feed/cam3
+2025-05-08 13:53:56,160 [WARNING] - Task queue depth is 1
+2025-05-08 13:57:21,165 [WARNING] - Task queue depth is 1
+2025-05-08 13:57:26,100 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-08 14:00:10,068 [WARNING] - Task queue depth is 1
+2025-05-08 14:01:12,923 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-08 14:01:13,060 [INFO] - Client disconnected while serving /video_feed/cam3
+2025-05-08 14:03:42,779 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-08 14:03:42,938 [INFO] - Client disconnected while serving /video_feed/cam3
+2025-05-08 14:05:39,788 [INFO] - Client disconnected while serving /video_feed/cam3
+2025-05-08 14:10:02,399 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-08 14:11:43,404 [INFO] - YOLO models loaded successfully
+2025-05-08 14:11:43,437 [INFO] - Database initialized successfully (sqlite)
+2025-05-08 14:11:43,437 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-08 14:13:29,171 [INFO] - YOLO models loaded successfully
+2025-05-08 14:13:29,188 [INFO] - Database initialized successfully (sqlite)
+2025-05-08 14:13:29,204 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-08 14:14:05,999 [WARNING] - Task queue depth is 1
+2025-05-08 14:14:14,754 [INFO] - Client disconnected while serving /video_feed/cam3
+2025-05-08 14:21:47,348 [WARNING] - Task queue depth is 1
+2025-05-08 14:21:47,533 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-08 14:24:52,562 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-08 14:24:52,696 [INFO] - Client disconnected while serving /video_feed/cam3
+2025-05-08 14:30:34,341 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-08 14:30:34,474 [INFO] - Client disconnected while serving /video_feed/cam3
+2025-05-08 14:32:04,558 [INFO] - Client disconnected while serving /video_feed/cam3
+2025-05-08 14:32:04,706 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-08 15:07:02,116 [INFO] - YOLO models loaded successfully
+2025-05-08 15:07:02,151 [INFO] - Database initialized successfully (sqlite)
+2025-05-08 15:07:02,156 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-08 15:09:18,579 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-08 15:09:19,569 [INFO] - Client disconnected while serving /video_feed/cam3
+2025-05-08 15:09:33,279 [INFO] - Client disconnected while serving /video_feed/cam3
+2025-05-08 15:09:33,394 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-08 15:11:21,357 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-08 15:12:46,072 [INFO] - Client disconnected while serving /video_feed/cam3
+2025-05-08 15:14:45,296 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-08 15:14:46,234 [INFO] - Client disconnected while serving /video_feed/cam3
+2025-05-08 16:40:24,999 [ERROR] - Camera initialization error: OpenDevice failed
+2025-05-08 16:40:25,001 [ERROR] - Camera initialization error cam3: OpenDevice failed
+2025-05-08 16:40:25,187 [ERROR] - Camera initialization error: OpenDevice failed
+2025-05-08 16:40:25,188 [ERROR] - Camera initialization error cam2: OpenDevice failed
+2025-05-08 16:41:57,611 [INFO] - YOLO models loaded successfully
+2025-05-08 16:41:57,658 [INFO] - Database initialized successfully (sqlite)
+2025-05-08 16:41:57,663 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-08 16:43:38,523 [WARNING] - Task queue depth is 1
+2025-05-08 16:43:38,643 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-08 16:46:28,360 [INFO] - Client disconnected while serving /video_feed/cam3
+2025-05-08 16:46:28,465 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-08 16:49:20,507 [WARNING] - Task queue depth is 1
+2025-05-08 16:49:25,710 [WARNING] - Task queue depth is 2
+2025-05-08 16:49:34,273 [INFO] - Client disconnected while serving /video_feed/cam3
+2025-05-08 17:40:32,811 [INFO] - YOLO models loaded successfully
+2025-05-08 17:40:32,872 [INFO] - Database initialized successfully (sqlite)
+2025-05-08 17:40:32,876 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-08 17:41:26,395 [INFO] - YOLO models loaded successfully
+2025-05-08 17:41:26,410 [INFO] - Database initialized successfully (sqlite)
+2025-05-08 17:41:26,410 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-08 17:45:06,834 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-08 17:38:31,578 [INFO] - YOLO models loaded successfully
+2025-05-08 17:38:31,638 [INFO] - Database initialized successfully (sqlite)
+2025-05-08 17:38:31,638 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-08 17:39:23,567 [ERROR] - Camera initialization error: OpenDevice failed
+2025-05-08 17:39:23,569 [ERROR] - Camera initialization error cam2: OpenDevice failed
+2025-05-08 17:39:23,700 [ERROR] - Camera initialization error: OpenDevice failed
+2025-05-08 17:39:23,700 [ERROR] - Camera initialization error cam3: OpenDevice failed
+2025-05-08 17:39:53,483 [ERROR] - Camera initialization error: OpenDevice failed
+2025-05-08 17:39:53,483 [ERROR] - Camera initialization error cam2: OpenDevice failed
+2025-05-08 17:39:53,625 [ERROR] - Camera initialization error: OpenDevice failed
+2025-05-08 17:39:53,625 [ERROR] - Camera initialization error cam3: OpenDevice failed
+2025-05-08 18:43:12,874 [INFO] - YOLO models loaded successfully
+2025-05-08 18:43:12,939 [INFO] - Database initialized successfully (sqlite)
+2025-05-08 18:43:12,947 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-08 18:43:49,324 [INFO] - YOLO models loaded successfully
+2025-05-08 18:43:49,350 [INFO] - Database initialized successfully (sqlite)
+2025-05-08 18:43:49,357 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-08 18:46:02,877 [INFO] - YOLO models loaded successfully
+2025-05-08 18:46:02,894 [INFO] - Database initialized successfully (sqlite)
+2025-05-08 18:46:02,907 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-08 18:47:58,039 [INFO] - YOLO models loaded successfully
+2025-05-08 18:47:58,106 [INFO] - Database initialized successfully (sqlite)
+2025-05-08 18:47:58,106 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-08 18:48:52,445 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-08 18:48:52,611 [INFO] - Client disconnected while serving /video_feed/cam3
+2025-05-08 18:50:48,177 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-08 18:50:48,242 [INFO] - Client disconnected while serving /video_feed/cam3
+2025-05-08 18:55:19,715 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-08 18:55:42,606 [INFO] - Client disconnected while serving /video_feed/cam3
+2025-05-08 18:55:42,755 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-08 18:57:04,406 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-08 18:57:04,471 [INFO] - Client disconnected while serving /video_feed/cam3
+2025-05-08 20:55:09,473 [INFO] - YOLO models loaded successfully
+2025-05-08 20:55:09,604 [INFO] - Database initialized successfully (sqlite)
+2025-05-08 20:55:09,604 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-08 21:07:24,365 [ERROR] - Camera initialization error: OpenDevice failed
+2025-05-08 21:07:24,366 [ERROR] - Camera initialization error cam2: OpenDevice failed
+2025-05-08 21:07:24,649 [ERROR] - Camera initialization error: OpenDevice failed
+2025-05-08 21:07:24,650 [ERROR] - Camera initialization error cam3: OpenDevice failed
+2025-05-08 21:29:29,858 [INFO] - YOLO models loaded successfully
+2025-05-08 21:29:29,885 [INFO] - Database initialized successfully (sqlite)
+2025-05-08 21:29:29,888 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-08 21:34:45,988 [INFO] - YOLO models loaded successfully
+2025-05-08 21:34:46,051 [INFO] - Database initialized successfully (sqlite)
+2025-05-08 21:34:46,057 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-08 21:50:02,816 [INFO] - YOLO models loaded successfully
+2025-05-08 21:50:02,848 [INFO] - Database initialized successfully (sqlite)
+2025-05-08 21:50:02,850 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-08 21:50:53,619 [INFO] - YOLO models loaded successfully
+2025-05-08 21:50:53,636 [INFO] - Database initialized successfully (sqlite)
+2025-05-08 21:50:53,641 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-08 22:00:54,717 [INFO] - YOLO models loaded successfully
+2025-05-08 22:00:54,741 [INFO] - Database initialized successfully (sqlite)
+2025-05-08 22:00:54,743 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-08 22:03:45,837 [INFO] - YOLO models loaded successfully
+2025-05-08 22:03:45,859 [INFO] - Database initialized successfully (sqlite)
+2025-05-08 22:03:45,871 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-08 22:04:05,155 [ERROR] - Camera initialization error cam1: Camera with serial DA5211138 not found
+2025-05-08 22:10:15,204 [WARNING] - 2 thread(s) still running
+2025-05-08 22:10:23,649 [INFO] - YOLO models loaded successfully
+2025-05-08 22:10:23,679 [INFO] - Database initialized successfully (sqlite)
+2025-05-08 22:10:23,685 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-08 22:10:56,217 [ERROR] - Camera initialization error cam1: Camera with serial DA5211138 not found
+2025-05-08 22:11:14,358 [WARNING] - Task queue depth is 1
+2025-05-08 22:11:15,089 [WARNING] - Task queue depth is 2
+2025-05-08 22:11:20,979 [INFO] - Client disconnected while serving /video_feed/cam3
+2025-05-08 22:11:21,096 [ERROR] - Camera initialization error cam1: Camera with serial DA5211138 not found
+2025-05-08 22:11:21,115 [WARNING] - Task queue depth is 1
+2025-05-08 22:11:21,115 [WARNING] - Task queue depth is 2
+2025-05-08 22:11:21,116 [WARNING] - Task queue depth is 3
+2025-05-08 22:11:21,364 [WARNING] - Task queue depth is 2
+2025-05-08 22:11:22,042 [ERROR] - Camera initialization error cam1: Camera with serial DA5211138 not found
+2025-05-08 22:11:35,954 [ERROR] - Camera initialization error cam1: Camera with serial DA5211138 not found
+2025-05-08 22:11:47,320 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-08 22:14:35,835 [ERROR] - Camera initialization error cam1: Camera with serial DA5211138 not found
+2025-05-08 22:21:07,308 [ERROR] - Camera initialization error cam1: Camera with serial DA5211138 not found
+2025-05-08 22:23:26,347 [ERROR] - Camera initialization error cam1: Camera with serial DA5211138 not found
+2025-05-08 22:23:32,912 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-08 22:23:32,980 [INFO] - Client disconnected while serving /video_feed/cam3
+2025-05-08 22:23:37,989 [ERROR] - Camera initialization error cam1: Camera with serial DA5211138 not found
+2025-05-08 22:25:06,361 [ERROR] - Camera initialization error cam1: Camera with serial DA5211138 not found
+2025-05-08 22:25:15,213 [ERROR] - Camera initialization error cam1: Camera with serial DA5211138 not found
+2025-05-08 22:25:29,205 [ERROR] - Camera initialization error cam1: Camera with serial DA5211138 not found
+2025-05-08 22:25:50,803 [WARNING] - Task queue depth is 1
+2025-05-08 22:25:52,165 [ERROR] - Camera initialization error cam1: Camera with serial DA5211138 not found
+2025-05-08 22:25:55,943 [ERROR] - Camera initialization error cam1: Camera with serial DA5211138 not found
+2025-05-08 22:26:29,605 [ERROR] - Camera initialization error cam1: Camera with serial DA5211138 not found
+2025-05-08 22:26:58,359 [WARNING] - Task queue depth is 1
+2025-05-08 22:27:02,132 [ERROR] - Camera initialization error cam1: Camera with serial DA5211138 not found
+2025-05-08 22:27:41,329 [INFO] - YOLO models loaded successfully
+2025-05-08 22:27:41,368 [INFO] - Database initialized successfully (sqlite)
+2025-05-08 22:27:41,368 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-08 22:28:11,346 [ERROR] - Camera initialization error cam1: Camera with serial DA5211138 not found
+2025-05-08 22:28:26,845 [ERROR] - Camera initialization error cam1: Camera with serial DA5211138 not found
+2025-05-08 22:28:49,744 [ERROR] - Camera initialization error cam1: Camera with serial DA5211138 not found
+2025-05-08 22:29:12,224 [INFO] - Client disconnected while serving /video_feed/cam3
+2025-05-08 22:29:12,310 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-08 22:29:24,363 [ERROR] - Camera initialization error cam1: Camera with serial DA5211138 not found
+2025-05-08 22:30:01,511 [WARNING] - 3 thread(s) still running
+2025-05-08 22:30:11,382 [INFO] - YOLO models loaded successfully
+2025-05-08 22:30:11,408 [INFO] - Database initialized successfully (sqlite)
+2025-05-08 22:30:11,416 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-08 22:32:26,687 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-08 22:42:21,089 [INFO] - YOLO models loaded successfully
+2025-05-08 22:42:21,113 [INFO] - Database initialized successfully (sqlite)
+2025-05-08 22:42:21,113 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-08 22:43:37,473 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-08 22:43:57,302 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-08 22:44:20,347 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-08 22:48:05,167 [INFO] - Client disconnected while serving /video_feed/cam3
+2025-05-08 22:48:05,240 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-08 23:09:52,690 [CRITICAL] - Failed to load models: 'models/det_model_p2.pt_v2' does not exist
+2025-05-08 23:11:00,648 [INFO] - YOLO models loaded successfully
+2025-05-08 23:11:00,680 [INFO] - Database initialized successfully (sqlite)
+2025-05-08 23:11:00,680 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-08 23:11:33,600 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-08 23:13:49,326 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-08 23:13:52,477 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-08 23:13:59,916 [WARNING] - Task queue depth is 1
+2025-05-08 23:14:00,032 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-08 23:18:51,863 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-08 23:18:51,961 [INFO] - Client disconnected while serving /video_feed/cam3
+2025-05-08 23:21:08,579 [INFO] - YOLO models loaded successfully
+2025-05-08 23:21:08,600 [INFO] - Database initialized successfully (sqlite)
+2025-05-08 23:21:08,606 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-08 23:22:54,363 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-08 23:23:28,688 [INFO] - Client disconnected while serving /video_feed/cam3
+2025-05-08 23:23:28,754 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-08 23:41:58,474 [INFO] - YOLO models loaded successfully
+2025-05-08 23:41:58,505 [INFO] - Database initialized successfully (sqlite)
+2025-05-08 23:41:58,508 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-08 23:46:20,703 [INFO] - YOLO models loaded successfully
+2025-05-08 23:46:20,721 [INFO] - Database initialized successfully (sqlite)
+2025-05-08 23:46:20,731 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-08 23:49:02,085 [INFO] - YOLO models loaded successfully
+2025-05-08 23:49:02,115 [INFO] - Database initialized successfully (sqlite)
+2025-05-08 23:49:02,124 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-08 23:52:38,975 [INFO] - YOLO models loaded successfully
+2025-05-08 23:52:39,003 [INFO] - Database initialized successfully (sqlite)
+2025-05-08 23:52:39,008 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-08 23:53:39,623 [INFO] - YOLO models loaded successfully
+2025-05-08 23:53:39,650 [INFO] - Database initialized successfully (sqlite)
+2025-05-08 23:53:39,650 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-08 23:53:55,798 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-08 23:54:37,674 [WARNING] - Task queue depth is 1
+2025-05-08 23:55:58,330 [INFO] - Client disconnected while serving /video_feed/cam3
+2025-05-08 23:56:00,554 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-08 23:56:04,660 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-08 23:57:10,685 [WARNING] - 3 thread(s) still running
+2025-05-08 23:57:18,726 [INFO] - YOLO models loaded successfully
+2025-05-08 23:57:18,748 [INFO] - Database initialized successfully (sqlite)
+2025-05-08 23:57:18,748 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-08 23:57:32,262 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-08 23:59:31,981 [INFO] - YOLO models loaded successfully
+2025-05-08 23:59:32,011 [INFO] - Database initialized successfully (sqlite)
+2025-05-08 23:59:32,018 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-09 00:02:05,516 [WARNING] - 2 thread(s) still running
+2025-05-09 00:02:13,713 [INFO] - YOLO models loaded successfully
+2025-05-09 00:02:13,727 [INFO] - Database initialized successfully (sqlite)
+2025-05-09 00:02:13,727 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-09 00:09:23,339 [INFO] - YOLO models loaded successfully
+2025-05-09 00:09:23,371 [INFO] - Database initialized successfully (sqlite)
+2025-05-09 00:09:23,374 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-09 00:12:27,990 [INFO] - Client disconnected while serving /video_feed/cam3
+2025-05-09 00:12:28,100 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-09 00:13:02,032 [INFO] - Client disconnected while serving /video_feed/cam3
+2025-05-09 00:17:01,867 [INFO] - YOLO models loaded successfully
+2025-05-09 00:17:01,951 [INFO] - Database initialized successfully (sqlite)
+2025-05-09 00:17:01,951 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-09 00:22:07,325 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-09 00:27:26,424 [INFO] - Client disconnected while serving /video_feed/cam3
+2025-05-09 00:27:26,542 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-09 00:32:42,438 [INFO] - YOLO models loaded successfully
+2025-05-09 00:32:42,468 [INFO] - Database initialized successfully (sqlite)
+2025-05-09 00:32:42,471 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-09 00:36:33,919 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-09 00:36:51,484 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-09 00:36:51,642 [INFO] - Client disconnected while serving /video_feed/cam3
+2025-05-09 00:57:37,675 [INFO] - YOLO models loaded successfully
+2025-05-09 00:57:37,704 [INFO] - Database initialized successfully (sqlite)
+2025-05-09 00:57:37,706 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-09 01:05:09,011 [ERROR] - Camera initialization error: OpenDevice failed
+2025-05-09 01:05:09,011 [ERROR] - Error initializing camera cam2: OpenDevice failed
+2025-05-09 01:05:09,150 [ERROR] - Camera initialization error: OpenDevice failed
+2025-05-09 01:05:09,150 [ERROR] - Error initializing camera cam3: OpenDevice failed
+2025-05-09 01:05:10,633 [ERROR] - Camera initialization error: OpenDevice failed
+2025-05-09 01:05:10,633 [ERROR] - Camera initialization error cam2: OpenDevice failed
+2025-05-09 01:05:10,933 [ERROR] - Camera initialization error: OpenDevice failed
+2025-05-09 01:05:10,934 [ERROR] - Camera initialization error cam3: OpenDevice failed
+2025-05-09 01:05:17,939 [ERROR] - Camera initialization error: OpenDevice failed
+2025-05-09 01:05:17,941 [ERROR] - Error initializing camera cam2: OpenDevice failed
+2025-05-09 01:05:18,097 [ERROR] - Camera initialization error: OpenDevice failed
+2025-05-09 01:05:18,097 [ERROR] - Error initializing camera cam3: OpenDevice failed
+2025-05-09 01:10:57,788 [INFO] - YOLO models loaded successfully
+2025-05-09 01:10:57,833 [INFO] - Database initialized successfully (sqlite)
+2025-05-09 01:10:57,837 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-09 01:11:24,479 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-09 01:15:01,932 [WARNING] - Task queue depth is 1
+2025-05-09 01:15:21,930 [WARNING] - Task queue depth is 1
+2025-05-09 01:15:25,875 [INFO] - Client disconnected while serving /video_feed/cam3
+2025-05-09 01:15:25,985 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-09 01:25:16,513 [INFO] - YOLO models loaded successfully
+2025-05-09 01:25:16,543 [INFO] - Database initialized successfully (sqlite)
+2025-05-09 01:25:16,543 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-09 01:26:02,803 [INFO] - Client disconnected while serving /video_feed/cam3
+2025-05-09 01:34:25,559 [INFO] - YOLO models loaded successfully
+2025-05-09 01:34:25,592 [INFO] - Database initialized successfully (sqlite)
+2025-05-09 01:34:25,592 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-09 07:53:29,799 [INFO] - YOLO models loaded successfully
+2025-05-09 07:53:30,004 [INFO] - Database initialized successfully (sqlite)
+2025-05-09 07:53:30,016 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-09 08:03:31,857 [INFO] - Client disconnected while serving /video_feed/cam3
+2025-05-09 08:03:31,961 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-09 08:08:21,953 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-09 08:08:22,114 [INFO] - Client disconnected while serving /video_feed/cam3
+2025-05-09 08:16:15,958 [INFO] - Client disconnected while serving /video_feed/cam3
+2025-05-09 08:18:56,490 [INFO] - YOLO models loaded successfully
+2025-05-09 08:18:56,508 [INFO] - Database initialized successfully (sqlite)
+2025-05-09 08:18:56,520 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-09 08:22:10,198 [INFO] - Client disconnected while serving /video_feed/cam3
+2025-05-09 08:22:10,302 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-09 08:27:16,126 [INFO] - YOLO models loaded successfully
+2025-05-09 08:27:16,210 [INFO] - Database initialized successfully (sqlite)
+2025-05-09 08:27:16,214 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-09 09:08:53,033 [INFO] - YOLO models loaded successfully
+2025-05-09 09:08:53,052 [INFO] - Database initialized successfully (sqlite)
+2025-05-09 09:08:53,052 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-09 10:54:52,859 [WARNING] - Task queue depth is 1
+2025-05-09 10:55:58,962 [INFO] - YOLO models loaded successfully
+2025-05-09 10:55:58,975 [INFO] - Database initialized successfully (sqlite)
+2025-05-09 10:55:58,990 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-09 15:13:49,002 [INFO] - YOLO models loaded successfully
+2025-05-09 15:13:49,063 [INFO] - Database initialized successfully (sqlite)
+2025-05-09 15:13:49,077 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-09 15:14:42,324 [ERROR] - Error initializing camera cam3: Camera with serial DA5843329 not found
+2025-05-09 15:15:12,722 [ERROR] - Camera initialization error cam3: Camera with serial DA5843329 not found
+2025-05-09 15:15:22,301 [ERROR] - Error initializing camera cam3: Camera with serial DA5843329 not found
+2025-05-09 15:15:56,753 [ERROR] - Camera initialization error cam3: Camera with serial DA5843329 not found
+2025-05-09 15:16:01,176 [ERROR] - Error initializing camera cam3: Camera with serial DA5843329 not found
+2025-05-09 15:16:26,660 [ERROR] - Error initializing camera cam3: Camera with serial DA5843329 not found
+2025-05-09 15:16:33,350 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-09 15:16:52,382 [INFO] - YOLO models loaded successfully
+2025-05-09 15:16:52,404 [INFO] - Database initialized successfully (sqlite)
+2025-05-09 15:16:52,408 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-09 15:17:14,731 [ERROR] - Error initializing camera cam3: Camera with serial DA5843329 not found
+2025-05-09 15:17:27,673 [ERROR] - Camera initialization error cam3: Camera with serial DA5843329 not found
+2025-05-09 15:17:47,873 [ERROR] - Error initializing camera cam3: Camera with serial DA5843329 not found
+2025-05-09 15:17:55,204 [ERROR] - Error initializing camera cam3: Camera with serial DA5843329 not found
+2025-05-09 15:17:57,020 [ERROR] - Camera initialization error cam3: Camera with serial DA5843329 not found
+2025-05-09 15:18:16,197 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-09 15:18:19,599 [ERROR] - Error initializing camera cam3: Camera with serial DA5843329 not found
+2025-05-09 15:18:20,031 [ERROR] - Camera initialization error cam3: Camera with serial DA5843329 not found
+2025-05-09 15:18:29,477 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-09 15:18:34,493 [ERROR] - Error initializing camera cam3: Camera with serial DA5843329 not found
+2025-05-09 15:18:34,925 [ERROR] - Camera initialization error cam3: Camera with serial DA5843329 not found
+2025-05-09 15:20:04,751 [INFO] - YOLO models loaded successfully
+2025-05-09 15:20:04,759 [INFO] - Database initialized successfully (sqlite)
+2025-05-09 15:20:04,775 [INFO] - Serving on http://127.0.0.1:5000
+2025-05-09 15:21:29,575 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-05-09 15:45:14,383 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-07-11 12:55:26,924 [INFO] - YOLO models loaded successfully
+2025-07-11 12:55:26,991 [INFO] - Database initialized successfully (sqlite)
+2025-07-11 12:55:26,995 [INFO] - Serving on http://127.0.0.1:5000
+2025-07-11 12:55:50,726 [ERROR] - Error initializing camera cam1: Camera with serial DA5211138 not found
+2025-07-11 12:55:50,835 [ERROR] - Error initializing camera cam2: Camera with serial DA5843333 not found
+2025-07-11 12:55:52,622 [ERROR] - Camera initialization error cam1: Camera with serial DA5211138 not found
+2025-07-11 12:55:52,748 [ERROR] - Camera initialization error cam2: Camera with serial DA5843333 not found
+2025-07-11 12:56:29,691 [ERROR] - Error initializing camera cam1: Camera with serial DA5211138 not found
+2025-07-11 12:56:29,815 [ERROR] - Error initializing camera cam2: Camera with serial DA5843333 not found
+2025-07-11 12:56:29,940 [ERROR] - Camera initialization error cam1: Camera with serial DA5211138 not found
+2025-07-11 12:56:30,238 [ERROR] - Camera initialization error cam2: Camera with serial DA5843333 not found
+2025-07-11 12:57:05,937 [INFO] - YOLO models loaded successfully
+2025-07-11 12:57:05,961 [INFO] - Database initialized successfully (sqlite)
+2025-07-11 12:57:05,964 [INFO] - Serving on http://127.0.0.1:5000
+2025-07-11 12:57:22,464 [ERROR] - Error initializing camera cam1: Camera with serial DA5211138 not found
+2025-07-11 12:57:22,573 [ERROR] - Error initializing camera cam2: Camera with serial DA5843333 not found
+2025-07-11 12:57:23,973 [ERROR] - Camera initialization error cam1: Camera with serial DA5211138 not found
+2025-07-11 12:57:24,080 [ERROR] - Camera initialization error cam2: Camera with serial DA5843333 not found
+2025-07-11 12:58:33,013 [ERROR] - Error initializing camera cam1: Camera with serial DA5211138 not found
+2025-07-11 12:58:33,135 [ERROR] - Error initializing camera cam2: Camera with serial DA5843333 not found
+2025-07-11 12:58:33,260 [ERROR] - Camera initialization error cam1: Camera with serial DA5211138 not found
+2025-07-11 12:58:33,560 [ERROR] - Camera initialization error cam2: Camera with serial DA5843333 not found
+2025-07-11 13:08:09,775 [INFO] - YOLO models loaded successfully
+2025-07-11 13:08:09,855 [INFO] - Database initialized successfully (sqlite)
+2025-07-11 13:08:09,862 [INFO] - Serving on http://127.0.0.1:5000
+2025-07-11 13:09:12,298 [INFO] - Client disconnected while serving /video_feed/cam1
+2025-07-11 13:09:12,454 [INFO] - Client disconnected while serving /video_feed/cam2
+2025-07-11 13:13:55,044 [INFO] - YOLO models loaded successfully
+2025-07-11 13:13:55,134 [INFO] - Database initialized successfully (sqlite)
+2025-07-11 13:13:55,134 [INFO] - Serving on http://127.0.0.1:5000
+2025-07-11 13:24:27,023 [INFO] - YOLO models loaded successfully
+2025-07-11 13:24:27,057 [INFO] - Database initialized successfully (sqlite)
+2025-07-11 13:24:27,062 [INFO] - Serving on http://127.0.0.1:5000
+2025-07-11 13:24:48,633 [ERROR] - Error initializing camera cam1: Camera with serial DA5211138 not found
+2025-07-11 13:24:48,740 [ERROR] - Error initializing camera cam2: Camera with serial DA5843333 not found
+2025-07-11 13:24:50,518 [ERROR] - Camera initialization error cam1: Camera with serial DA5211138 not found
+2025-07-11 13:24:50,620 [ERROR] - Camera initialization error cam2: Camera with serial DA5843333 not found
+2025-07-11 14:34:25,170 [INFO] - Client disconnected while serving /video_feed/cam1
+2025-07-11 14:35:57,052 [WARNING] - Task queue depth is 1
+2025-07-11 14:36:11,721 [WARNING] - Task queue depth is 2
+2025-07-11 14:36:12,103 [WARNING] - Task queue depth is 3
+2025-07-11 14:36:12,303 [WARNING] - Task queue depth is 4
+2025-07-11 14:36:17,051 [WARNING] - Task queue depth is 5
+2025-07-11 15:24:13,716 [INFO] - YOLO models loaded successfully
+2025-07-11 15:24:13,754 [INFO] - Database initialized successfully (sqlite)
+2025-07-11 15:24:13,759 [INFO] - Serving on http://127.0.0.1:5000
+2025-07-11 15:25:23,918 [ERROR] - Camera initialization error: OpenDevice failed
+2025-07-11 15:25:23,920 [ERROR] - Error initializing camera cam1: OpenDevice failed
+2025-07-11 15:25:24,149 [ERROR] - Camera initialization error: OpenDevice failed
+2025-07-11 15:25:24,152 [ERROR] - Error initializing camera cam2: OpenDevice failed
+2025-07-11 15:25:26,126 [ERROR] - Camera initialization error: OpenDevice failed
+2025-07-11 15:25:26,127 [ERROR] - Camera initialization error cam1: OpenDevice failed
+2025-07-11 15:25:26,370 [ERROR] - Camera initialization error: OpenDevice failed
+2025-07-11 15:25:26,372 [ERROR] - Camera initialization error cam2: OpenDevice failed
+2025-07-11 16:19:22,142 [INFO] - YOLO models loaded successfully
+2025-07-11 16:19:22,174 [INFO] - Database initialized successfully (sqlite)
+2025-07-11 16:19:22,177 [INFO] - Serving on http://127.0.0.1:5000
+2025-07-11 16:20:08,631 [INFO] - Found 2 camera(s)
+2025-07-11 16:20:08,639 [ERROR] - Exception on /start_stream [GET]
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\Desktop\New_folder\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\Desktop\New_folder\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\Desktop\New_folder\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\Desktop\New_folder\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\ADMIN\Desktop\New_folder\bandwidth.py", line 614, in decorated_function
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "c:\Users\ADMIN\Desktop\New_folder\bandwidth.py", line 823, in start_stream
+    if not safe_camera_initialization():
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\ADMIN\Desktop\New_folder\bandwidth.py", line 691, in safe_camera_initialization
+    if not check_camera_connections():
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\ADMIN\Desktop\New_folder\bandwidth.py", line 636, in check_camera_connections
+    logger.info(f"GigE Camera {i+1}: {dev_info.SpecialInfo.stGigEInfo.chSerialNumber.decode()}")
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'c_ubyte_Array_16' object has no attribute 'decode'
+2025-07-11 16:27:15,214 [INFO] - YOLO models loaded successfully
+2025-07-11 16:27:15,479 [INFO] - Database initialized successfully (sqlite)
+2025-07-11 16:27:15,483 [INFO] - Serving on http://127.0.0.1:5000
+2025-07-11 16:32:37,771 [INFO] - Found 2 camera(s)
+2025-07-11 16:32:37,772 [INFO] - GigE Camera 1: DA5211138
+2025-07-11 16:32:37,773 [INFO] - GigE Camera 2: DA5843333
+2025-07-11 16:32:38,471 [INFO] - Successfully initialized camera DA5211138 (attempt 1)
+2025-07-11 16:32:38,473 [INFO] - Successfully initialized cam1
+2025-07-11 16:32:39,112 [INFO] - Successfully initialized camera DA5843333 (attempt 1)
+2025-07-11 16:32:39,113 [INFO] - Successfully initialized cam2
+2025-07-11 16:33:00,074 [INFO] - Found 2 camera(s)
+2025-07-11 16:33:00,077 [INFO] - GigE Camera 1: DA5843333
+2025-07-11 16:33:00,078 [INFO] - GigE Camera 2: DA5211138
+2025-07-11 16:33:00,773 [INFO] - Successfully initialized camera DA5211138 (attempt 1)
+2025-07-11 16:33:00,773 [INFO] - Successfully initialized cam1
+2025-07-11 16:33:01,412 [INFO] - Successfully initialized camera DA5843333 (attempt 1)
+2025-07-11 16:33:01,413 [INFO] - Successfully initialized cam2

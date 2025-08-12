@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% block title %}Batch Details{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="card shadow mb-4">
+        <div class="card-header bg-primary text-white">
+            <h4 class="mb-0">Batch #{{ batch.batch_number }}</h4>
+        </div>
+        <div class="card-body">
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <h5>Batch Information</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <strong>Shift:</strong> {{ batch.shift }}
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Created By:</strong> {{ batch.created_by }}
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Date:</strong> {{ batch.timestamp.strftime('%Y-%m-%d %H:%M') }}
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h5>Statistics</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <strong>Total Objects:</strong> {{ objects|length }}
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Last Inspection:</strong> {{ objects[0].timestamp.strftime('%H:%M:%S') if objects else 'N/A' }}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <h5 class="mb-3">Objects in Batch</h5>
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Object #</th>
+                            <th>Inspection Time</th>
+                            <th>Images</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for obj in objects %}
+                        <tr>
+                            <td>{{ obj.object_number }}</td>
+                            <td>{{ obj.timestamp.strftime('%H:%M:%S') }}</td>
+                            <td>{{ obj.images_count }}</td>
+                            <td>
+                                <a href="{{ url_for('view_object', object_id=obj.id) }}" 
+                                   class="btn btn-sm btn-primary">
+                                   <i class="bi bi-eye"></i> View
+                                </a>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="card-footer text-muted">
+            <a href="{{ url_for('view_history') }}" class="btn btn-secondary">
+                <i class="bi bi-arrow-left"></i> Back to History
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}

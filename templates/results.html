@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <h4>Capture Results</h4>
+            <div>
+                <span class="badge bg-primary me-2">Shift: {{ session.shift }}</span>
+                <span class="badge bg-secondary me-2">Batch: {{ session.batch }}</span>
+                <span class="badge bg-info">Object: {{ session.object_number }}</span>
+            </div>
+        </div>
+        
+        <div class="card-body">
+            {% if mode == "capture" %}
+            <div class="alert alert-info">
+                Review the captured images before processing
+            </div>
+            
+            <div class="row">
+                {% for cam_label, img_src in results.items() %}
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            {{ cam_label|upper }} Camera
+                        </div>
+                        <img src="{{ img_src }}" class="card-img-top" alt="{{ cam_label }} capture">
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            
+            <div class="d-flex justify-content-between mt-3">
+                <a href="{{ url_for('stream') }}" class="btn btn-warning">Retake</a>
+                <form method="POST" action="{{ url_for('process_images') }}">
+                    <button type="submit" class="btn btn-success">Process Images</button>
+                </form>
+            </div>
+            
+            {% elif mode == "process" %}
+            <div class="alert alert-success">
+                Images processed successfully!
+            </div>
+            
+            <div class="row">
+                {% for cam_label, result in results.items() %}
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-header d-flex justify-content-between">
+                            <span>{{ cam_label|upper }} Camera</span>
+                            <span class="badge bg-primary">Processed</span>
+                        </div>
+                        <div class="card-body">
+                            <h5>Original</h5>
+                            <img src="{{ result.original }}" class="img-fluid mb-3" alt="Original">
+                            <h5>Processed</h5>
+                            <img src="{{ result.annotated }}" class="img-fluid" alt="Processed">
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            
+            <div class="d-flex justify-content-between mt-3">
+                <a href="{{ url_for('capture_form') }}" class="btn btn-primary">Capture Another</a>
+                <a href="{{ url_for('view_history') }}" class="btn btn-info">View History</a>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}

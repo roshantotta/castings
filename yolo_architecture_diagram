@@ -1,0 +1,33 @@
+// Flask YOLO Inspection System Architecture
+digraph {
+	User [label="User
+(Web Browser)" shape=box]
+	Flask [label="Flask App
+(UI + Auth + Routing)" shape=component]
+	Routes [label="Capture
+Process
+Shift/Batch
+Login" shape=component]
+	User -> Flask
+	Flask -> Routes
+	ImageProcessor [label="ImageProcessor
+(YOLO Detection + Classification)" shape=component]
+	Routes -> ImageProcessor
+	CameraManager [label="CameraManager
+(Hikvision SDK)" shape=component]
+	Routes -> CameraManager
+	YOLO [label="YOLOv8 Models
+(Detection + Classification)" shape=ellipse]
+	ImageProcessor -> YOLO
+	Storage [label="Image Storage
+(Annotated + Original)" shape=folder]
+	ImageProcessor -> Storage
+	Config [label=".env + config.yaml
+(Users, Camera IDs, Paths)" shape=note]
+	Logs [label="Logging + Sentry
+(Monitoring)" shape=note]
+	Flask -> Config
+	Flask -> Logs
+	ImageProcessor -> Logs
+	CameraManager -> Logs
+}
